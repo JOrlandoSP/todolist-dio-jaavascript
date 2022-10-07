@@ -20,12 +20,14 @@ BTNEL.addEventListener("click", ()=> {
 			<li id="${counter}" class="itemLi">
 			<button class="done"
 			onclick='
-			(function(){document.getElementById("${counter}").style.backgroundColor = "red"; })();
+			(function(){document.getElementById("${counter}").style.textDecoration = "line-through";
+						document.getElementById("${counter}").style.color = "#9A9A9A";})();
 			'><i class="fa fa-check"></i></button>
 		
 			<button class="undone"
 			onclick='
-			(function(){document.getElementById("${counter}").style.backgroundColor = "white"; })();
+			(function(){document.getElementById("${counter}").style.textDecoration = "none";
+						document.getElementById("${counter}").style.color = "#000000";})();
 			'><i class="fa fa-rotate-left"></i></button>
 
 			<button class="delete "id="${counter}" 
