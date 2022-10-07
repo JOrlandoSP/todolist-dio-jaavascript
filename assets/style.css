@@ -1,6 +1,11 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Lora:ital,wght@0,400;1,700&family=Roboto&display=swap');
+
+
 *{
 	margin: 0;
 	padding: 0;
+	font-family: Roboto;
 }
 
 body{
@@ -31,23 +36,90 @@ img{
 }
 
 #topbox{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	min-height: 80px;
 	width: 390px;
 	margin-top: 5px;
 	background-color: #0a2463;
 }
 
+#topbox h1{
+	color: #FFFFFF;
+	font-size: 42px;
+}
+
+#topbox p{
+	color: #FFFFFF;
+	font-size: 22px;
+}
+
 #inputbox{
-	min-height: 60px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 65px;
 	width: 390px;
 	margin-top: 5px;
 	background-color: #247BA0;
 }
 
+#inputbox input{
+	margin-top: 5px;
+	width: 380px;
+	text-align: center;
+	color: #0A2465;
+	font-size: 18px;
+	font-weight: 800;
+}
+
+#inputbox button{
+	height: 26px;
+	width: 180px;
+	background-color: #0A2465;
+	margin-top: 5px;
+	color: #FFFFFF;
+	font-size: 18px;
+	font-weight: 800;
+	border-radius: 25px;
+}
+
 #todobox{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	height: auto;
 	width: 390px;
 	margin-top: 5px;
-	background-color: #F86852;
+	background-color: #605F5E;
 	overflow: scroll;
+}
+
+#todobox li{
+	display: flex;
+	align-items: center;
+	min-height: 28px;
+	height: auto;
+	width: 380px;
+	background-color: #FAFAFA;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#todobox button{
+	border-radius: 25px;
+	margin: 2px;
+}
+
+.done{
+	background-color: #5cf64a;
+}
+
+.delete{
+	background-color: #E3002D;
+}
+
+.undone{
+	background-color: #ea9010;
 }

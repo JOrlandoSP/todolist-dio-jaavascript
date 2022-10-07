@@ -21,17 +21,17 @@ BTNEL.addEventListener("click", ()=> {
 			<button class="done"
 			onclick='
 			(function(){document.getElementById("${counter}").style.backgroundColor = "red"; })();
-			'>Done</button>
+			'><i class="fa fa-check"></i></button>
 		
 			<button class="undone"
 			onclick='
 			(function(){document.getElementById("${counter}").style.backgroundColor = "white"; })();
-			'>Undone</button>
+			'><i class="fa fa-rotate-left"></i></button>
 
 			<button class="delete "id="${counter}" 
 			onclick='
 			(function(){ document.getElementById("${counter}").remove(); })();
-			'>Remove</button> 
+			'><i class="fa fa-trash"></i></button> 
 
 			${INPUT.value} </li>
 			`;
