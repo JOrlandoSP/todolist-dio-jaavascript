@@ -16,7 +16,7 @@ body{
 	width: 100vw;
 	height: 100vh;
 	overflow: hidden;
-	background-image: url(https://w.wallhaven.cc/full/48/wallhaven-48vlj1.jpg);
+	background-image: url(https://w.wallhaven.cc/full/yj/wallhaven-yjgv2g.jpg);
 }
 
 img{
@@ -140,9 +140,6 @@ img{
 
 #todobox li{
 	font-size: 20px;
-	text-align: ;
-	display: flex;
-	align-items: center;
 	min-height: 35px;
 	height: auto;
 	width: 380px;
@@ -150,9 +147,13 @@ img{
 	margin-bottom: 5px;
 	background: #FFFFFF;
 	border-radius: 7px;
+	flex-wrap: wrap;
+	word-break: break-all;
+	hyphens: manual;
 }
 
 #todobox button{
+	text-decoration: none;
 	border-style: none;
 	border-radius: 25px;
 	margin: 2px;
